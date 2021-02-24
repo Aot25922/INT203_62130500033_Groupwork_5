@@ -22,7 +22,7 @@
 
 <body>
   <div id="app" class="max-w-xl mx-auto my-10 space-y-3 lg:max-w-2xl font-mono ">
-    <photo-search @enter="enter"></photo-search>
+    <photo-search @enter="enter" @cancel="cancel"></photo-search>
     <h3 class="font-mono text-2xl">Image Count:{{count}}</h3>
     <photo-item :img="search" :notfound="notfound" @add-fav="addFav" @pre-Fav="preFav" @zoom="zoomImage" @unzoom="unzoom"></photo-item>
   </div>
