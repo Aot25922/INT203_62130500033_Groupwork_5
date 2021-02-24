@@ -26,6 +26,7 @@ const app = Vue.createApp({
                     zoom: false
                 }
             ],
+            head:["Card","Name","Win Rate","Favorite"],
             svg: "http://www.w3.org/2000/svg",
             myenter: "",
             notfound: false

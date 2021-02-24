@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <div id="app" class="max-w-xl mx-auto my-10 space-y-3 md:max-w-2xl font-mono">
+  <div id="app" class="max-w-xl mx-auto my-10 space-y-3 lg:max-w-2xl font-mono ">
     <photo-search @enter="enter"></photo-search>
     <h3 class="font-mono text-2xl">Image Count:{{count}}</h3>
     <photo-item :img="search" :notfound="notfound" @add-fav="addFav" @pre-Fav="preFav" @zoom="zoomImage" @unzoom="unzoom"></photo-item>
@@ -29,9 +29,9 @@
 
   <!-- my main.js -->
   <script src="./main.js"></script>
-  <script src="./PhotoSearch.js"></script>
-  <script src="./PhotoItem.js"></script>
-  <script src="./PhotoView.js"></script>
+  <script src="./components/PhotoItem.js"></script>
+  <script src="./components/PhotoSearch.js"></script>
+  <script src="./components/PhotoView.js"></script>
   <script>
   const mountedApp = app.mount('#app')
   </script>
